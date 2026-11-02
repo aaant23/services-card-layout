@@ -1,0 +1,237 @@
+<div class="pentworx-master-grid">
+
+  <div class="service-card">
+    <span class="card-index">01 /</span>
+    <h2 class="card-title">PRINT &amp; VISUAL</h2>
+    <h3 class="card-subtitle">Promotional Design</h3>
+    <p class="card-description">
+      High-impact visuals designed to grab attention online and offline.
+    </p>
+    <div class="tag-container">
+      <span class="service-tag">[Event posters]</span>
+      <span class="service-tag">[Print collateral and flyers]</span>
+      <span class="service-tag">[Digital display artwork]</span>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <span class="card-index">02 /</span>
+    <h2 class="card-title">DIGITAL &amp; SOCIAL</h2>
+    <h3 class="card-subtitle">Social Media Content</h3>
+    <p class="card-description">
+      Tailored digital assets built for brand consistency on every screen.
+    </p>
+    <div class="tag-container">
+      <span class="service-tag">[Social graphics and stories]</span>
+      <span class="service-tag">[Short-form video]</span>
+      <span class="service-tag">[Custom promotional audio]</span>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <span class="card-index">03 /</span>
+    <h2 class="card-title">GROWTH</h2>
+    <h3 class="card-subtitle">Digital Campaigns</h3>
+    <p class="card-description">
+      Data-backed strategy to get you seen by the right audience.
+    </p>
+    <div class="tag-container">
+      <span class="service-tag">[Search engine optimisation (SEO)]</span>
+      <span class="service-tag">[Paid social and Google Ads]</span>
+      <span class="service-tag">[Campaign planning]</span>
+    </div>
+  </div>
+
+  <!-- Card 04: Case Study Teaser -->
+  <div class="case-study-teaser">
+    <div>
+      <span class="teaser-eyebrow">04 / LATEST PROJECT</span>
+      <h2 class="teaser-heading">Design and Marketing Strategy<br>Break A Leg Academy, Glasgow</h2>
+      <p class="teaser-blurb">
+        We recently partnered with Break A Leg Academy to deliver a complete multi-channel campaign for their upcoming production. From print collateral and digital assets to targeted marketing strategy, we built every touchpoint needed to drive sell-out audiences.
+      </p>
+      <div class="pill-container">
+        <span class="pill-badge">[EVENT POSTERS + PRINT FLYERS]</span>
+        <span class="pill-badge">[WEB CONTENT + DIGITAL ASSETS]</span>
+        <span class="pill-badge">[CAMPAIGN MARKETING STRATEGY]</span>
+        <span class="pill-badge">[PROMOTIONAL CONTENT]</span>
+      </div>
+    </div>
+    
+    <div class="teaser-status">
+      <span class="status-indicator"></span>
+      <span class="status-text">FULL CASE STUDY COMING SOON</span>
+    </div>
+  </div>
+
+<!-- Card 05: Image Slider with Overlay -->
+<div class="wip-slider">
+  <div class="wip-slide active">
+    <a href="https://static1.squarespace.com/static/66b0cf8f055e0919bed37b12/t/6a833720f65487647aa3b5f6/1786984224689/POSTER+W.+NAMES+JPEG.jpg" target="_blank" rel="noopener">
+      <img src="https://static1.squarespace.com/static/66b0cf8f055e0919bed37b12/t/6a833720f65487647aa3b5f6/1786984224689/POSTER+W.+NAMES+JPEG.jpg" alt="Break a Leg Academy Launch Poster">
+      
+      <!-- Dark Overlay Layer -->
+      <div class="poster-overlay">
+        <span class="overlay-badge">
+          <span class="badge-text">SNEAK PEEK</span>
+          <span class="click-emoji">👆</span>
+        </span>
+      </div>
+    </a>
+  </div>
+</div>
+</div>
+
+
+
+<style>
+
+
+/* Ensure link fills container for overlay positioning */
+.wip-slide a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.poster-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45); /* Adjust opacity between 0.1 and 0.9 to control darkness */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+/* Slightly lighten overlay on hover for interactive feel */
+.wip-slide a:hover .poster-overlay {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.overlay-badge {
+  font-family: 'Manrope', sans-serif;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 12px 22px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  font-size: 0.85rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Tap/Click Emoji Animation */
+.click-emoji {
+  font-size: 1.1rem;
+  display: inline-block;
+  animation: tap-pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes tap-pulse {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.25) translateY(-2px);
+  }
+}
+
+  /* Grid container */
+  .pentworx-master-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12-Column Grid System */
+    gap: 24px;                             /* Uniform row & column spacing */
+    width: 100%;
+    align-items: stretch;
+  }
+
+  /* Row 1: 3 Equal Cards (4 columns each out of 12) */
+  .service-card {
+    grid-column: span 4;
+  }
+
+  /* Row 2: 2 Cards (6 columns each out of 12 = 50/50 split matching Row 1 width) */
+  .case-study-teaser {
+    grid-column: span 6;
+  }
+
+  .wip-slider {
+    grid-column: span 6;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  /* Slider Internal Styles */
+  .wip-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+  }
+
+  .wip-slide.active {
+    opacity: 1;
+  }
+
+  .wip-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .pentworx-master-grid {
+      grid-template-columns: 1fr; /* Switch container to single column */
+    }
+
+    .service-card,
+    .case-study-teaser,
+    .wip-slider {
+      grid-column: span 1;
+    }
+
+    .case-study-teaser {
+      padding: 24px;
+    }
+
+    .wip-slider {
+      min-height: 320px;
+    }
+  }
+</style>
+
+<!-- Auto-rotate -->
+<script>
+  (function() {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.wip-slide');
+    if (slides.length <= 1) return;
+    
+    setInterval(() => {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }, 3500);
+  })();
+</script>
